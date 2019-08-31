@@ -9,22 +9,24 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    
+    // MARK: - IB Outlets
+    @IBOutlet var testLabel: UILabel!
+    
+    // MARK: - Properties
+    var jsonURL = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i="
+    var cocktail: Cocktail?
+    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        testLabel.text = jsonURL
+        
+        view.makeGradient()
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+   
 
 }

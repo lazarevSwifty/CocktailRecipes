@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A0D13E5231AA58B00767537 /* UIView + makeGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D13E4231AA58B00767537 /* UIView + makeGradient.swift */; };
+		9A399234231AADD200E8E2ED /* MainViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A399233231AADD200E8E2ED /* MainViewCell.swift */; };
+		9A6C68D1231AC654009CCBC7 /* ViewController + fetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C68D0231AC654009CCBC7 /* ViewController + fetchData.swift */; };
+		9A6C68D3231AD2FD009CCBC7 /* ViewController + CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C68D2231AD2FD009CCBC7 /* ViewController + CollectionView.swift */; };
+		9A76B79E231AF4E400A868FA /* View Controller Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A76B79D231AF4E400A868FA /* View Controller Navigation.swift */; };
 		E049D628231A69D800C9B5C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E049D627231A69D800C9B5C3 /* AppDelegate.swift */; };
 		E049D62A231A69D800C9B5C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E049D629231A69D800C9B5C3 /* ViewController.swift */; };
 		E049D62D231A69D800C9B5C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E049D62B231A69D800C9B5C3 /* Main.storyboard */; };
@@ -17,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A0D13E4231AA58B00767537 /* UIView + makeGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + makeGradient.swift"; sourceTree = "<group>"; };
+		9A399233231AADD200E8E2ED /* MainViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCell.swift; sourceTree = "<group>"; };
+		9A6C68D0231AC654009CCBC7 /* ViewController + fetchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + fetchData.swift"; sourceTree = "<group>"; };
+		9A6C68D2231AD2FD009CCBC7 /* ViewController + CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + CollectionView.swift"; sourceTree = "<group>"; };
+		9A76B79D231AF4E400A868FA /* View Controller Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View Controller Navigation.swift"; sourceTree = "<group>"; };
 		E049D624231A69D800C9B5C3 /* CocktailRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocktailRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E049D627231A69D800C9B5C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E049D629231A69D800C9B5C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +49,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9AEC9D11231AA4E2004C3D93 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9A0D13E4231AA58B00767537 /* UIView + makeGradient.swift */,
+				9A6C68D0231AC654009CCBC7 /* ViewController + fetchData.swift */,
+				9A6C68D2231AD2FD009CCBC7 /* ViewController + CollectionView.swift */,
+				9A76B79D231AF4E400A868FA /* View Controller Navigation.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		E049D61B231A69D800C9B5C3 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +79,7 @@
 		E049D626231A69D800C9B5C3 /* CocktailRecipes */ = {
 			isa = PBXGroup;
 			children = (
+				9AEC9D11231AA4E2004C3D93 /* Extensions */,
 				E049D63D231A6FAF00C9B5C3 /* View */,
 				E049D640231A6FED00C9B5C3 /* Model */,
 				E049D641231A700700C9B5C3 /* IB */,
@@ -71,6 +93,7 @@
 			children = (
 				E049D629231A69D800C9B5C3 /* ViewController.swift */,
 				E049D63B231A6F8000C9B5C3 /* DetailViewController.swift */,
+				9A399233231AADD200E8E2ED /* MainViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,9 +197,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E049D63C231A6F8000C9B5C3 /* DetailViewController.swift in Sources */,
+				9A6C68D3231AD2FD009CCBC7 /* ViewController + CollectionView.swift in Sources */,
+				9A76B79E231AF4E400A868FA /* View Controller Navigation.swift in Sources */,
 				E049D62A231A69D800C9B5C3 /* ViewController.swift in Sources */,
+				9A6C68D1231AC654009CCBC7 /* ViewController + fetchData.swift in Sources */,
 				E049D628231A69D800C9B5C3 /* AppDelegate.swift in Sources */,
+				9A399234231AADD200E8E2ED /* MainViewCell.swift in Sources */,
 				E049D63F231A6FE800C9B5C3 /* Cocktail.swift in Sources */,
+				9A0D13E5231AA58B00767537 /* UIView + makeGradient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +351,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZ2WU5BVYA;
 				INFOPLIST_FILE = "$(SRCROOT)/CocktailRecipes/Support Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -331,7 +361,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = study.CocktailRecipes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -340,7 +370,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZ2WU5BVYA;
 				INFOPLIST_FILE = "$(SRCROOT)/CocktailRecipes/Support Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -348,7 +380,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = study.CocktailRecipes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

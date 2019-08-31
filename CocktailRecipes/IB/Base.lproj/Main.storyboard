@@ -1,44 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LZI-C9-w7g">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Coctails-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CocktailRecipes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="JbF-Yk-Ixe">
-                                <rect key="frame" x="0.0" y="44" width="375" height="56"/>
+                            <searchBar contentMode="redraw" placeholder="Enter cocktail name" translatesAutoresizingMaskIntoConstraints="NO" id="JbF-Yk-Ixe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                                <color key="barTintColor" red="0.27906033400000002" green="0.16479429600000001" blue="0.39216303829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SsV-Ny-kyz">
-                                <rect key="frame" x="0.0" y="100" width="375" height="567"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="56" width="375" height="547"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RQc-Vx-Wau">
-                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="itemSize" width="375" height="150"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="nCA-AD-Q95">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="mainCell" id="nCA-AD-Q95" customClass="MainViewCell" customModule="CocktailRecipes" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JLX-o9-UIa">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="JLX-o9-UIa" secondAttribute="height" multiplier="1:1" id="xPx-gZ-wbC"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLT-Vf-OMs">
+                                                    <rect key="frame" x="157" y="61" width="211" height="28"/>
+                                                    <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="23"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" red="0.27906033400000002" green="0.16479429600000001" blue="0.39216303829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <size key="shadowOffset" width="1" height="1"/>
+                                                </label>
+                                            </subviews>
                                         </view>
+                                        <color key="backgroundColor" red="0.27906033400000002" green="0.16479429600000001" blue="0.39216303829999999" alpha="0.19964683219178078" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="LLT-Vf-OMs" firstAttribute="centerY" secondItem="nCA-AD-Q95" secondAttribute="centerY" id="1In-xf-1g3"/>
+                                            <constraint firstAttribute="trailing" secondItem="LLT-Vf-OMs" secondAttribute="trailing" constant="7" id="245-zl-yj5"/>
+                                            <constraint firstItem="JLX-o9-UIa" firstAttribute="leading" secondItem="nCA-AD-Q95" secondAttribute="leading" id="4lF-T6-r9s"/>
+                                            <constraint firstItem="JLX-o9-UIa" firstAttribute="top" secondItem="nCA-AD-Q95" secondAttribute="top" id="O24-hR-jzj"/>
+                                            <constraint firstItem="LLT-Vf-OMs" firstAttribute="leading" secondItem="JLX-o9-UIa" secondAttribute="trailing" constant="7" id="g5p-y0-8Oc"/>
+                                            <constraint firstAttribute="bottom" secondItem="JLX-o9-UIa" secondAttribute="bottom" id="n2p-eN-D9i"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="cocktailImage" destination="JLX-o9-UIa" id="Mnh-Qn-kX1"/>
+                                            <outlet property="cocktailName" destination="LLT-Vf-OMs" id="gYW-bK-EsA"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -50,31 +78,76 @@
                             <constraint firstItem="JbF-Yk-Ixe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RVa-iv-beF"/>
                             <constraint firstItem="SsV-Ny-kyz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Sbw-tG-wSD"/>
                             <constraint firstItem="JbF-Yk-Ixe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UMM-LR-ley"/>
-                            <constraint firstItem="JbF-Yk-Ixe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="oHW-4w-5up"/>
+                            <constraint firstItem="JbF-Yk-Ixe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oHW-4w-5up"/>
                             <constraint firstItem="SsV-Ny-kyz" firstAttribute="top" secondItem="JbF-Yk-Ixe" secondAttribute="bottom" id="s3x-Yu-t0D"/>
                             <constraint firstAttribute="trailing" secondItem="SsV-Ny-kyz" secondAttribute="trailing" id="weO-1y-HRG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Coctails" id="t2O-3g-FAr"/>
+                    <connections>
+                        <outlet property="collectionView" destination="SsV-Ny-kyz" id="Aew-Jh-sHQ"/>
+                        <segue destination="W3G-q9-T5Z" kind="show" identifier="toDelailVC" id="dre-jq-LrD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
+            <point key="canvasLocation" x="1370.4000000000001" y="115.59220389805098"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="mRt-Et-A9C">
             <objects>
                 <viewController id="W3G-q9-T5Z" customClass="DetailViewController" customModule="CocktailRecipes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KCw-io-WMX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOn-1v-nS9">
+                                <rect key="frame" x="20" y="291.5" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TOn-1v-nS9" firstAttribute="centerY" secondItem="KCw-io-WMX" secondAttribute="centerY" id="ROw-ES-UkE"/>
+                            <constraint firstItem="TOn-1v-nS9" firstAttribute="leading" secondItem="whN-C6-isf" secondAttribute="leading" constant="20" id="lKI-Ka-Cjm"/>
+                            <constraint firstItem="whN-C6-isf" firstAttribute="trailing" secondItem="TOn-1v-nS9" secondAttribute="trailing" constant="20" id="r2T-BR-Smu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="whN-C6-isf"/>
                     </view>
+                    <connections>
+                        <outlet property="testLabel" destination="TOn-1v-nS9" id="L03-gw-BIg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dV2-Sv-uBg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1162" y="116"/>
+            <point key="canvasLocation" x="2100" y="115.59220389805098"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Jjh-lL-hdS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LZI-C9-w7g" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="pjd-s8-B4R">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.27906033396720886" green="0.16479429602622986" blue="0.39216303825378418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="33"/>
+                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SqF-aW-Fkb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k9C-sh-G7a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="644" y="116"/>
         </scene>
     </scenes>
 </document>
