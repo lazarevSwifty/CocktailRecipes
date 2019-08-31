@@ -9,9 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    // MARK: - IB Outlets
+    @IBOutlet var collectionView: UICollectionView!
+    
+    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        collectionView.makeGradient()
     }
 
 

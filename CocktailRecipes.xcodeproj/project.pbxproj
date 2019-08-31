@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A0D13E5231AA58B00767537 /* UIView + makeGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D13E4231AA58B00767537 /* UIView + makeGradient.swift */; };
+		9A399234231AADD200E8E2ED /* MainViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A399233231AADD200E8E2ED /* MainViewCell.swift */; };
 		E049D628231A69D800C9B5C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E049D627231A69D800C9B5C3 /* AppDelegate.swift */; };
 		E049D62A231A69D800C9B5C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E049D629231A69D800C9B5C3 /* ViewController.swift */; };
 		E049D62D231A69D800C9B5C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E049D62B231A69D800C9B5C3 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A0D13E4231AA58B00767537 /* UIView + makeGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + makeGradient.swift"; sourceTree = "<group>"; };
+		9A399233231AADD200E8E2ED /* MainViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCell.swift; sourceTree = "<group>"; };
 		E049D624231A69D800C9B5C3 /* CocktailRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocktailRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E049D627231A69D800C9B5C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E049D629231A69D800C9B5C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9AEC9D11231AA4E2004C3D93 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9A0D13E4231AA58B00767537 /* UIView + makeGradient.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		E049D61B231A69D800C9B5C3 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +70,7 @@
 		E049D626231A69D800C9B5C3 /* CocktailRecipes */ = {
 			isa = PBXGroup;
 			children = (
+				9AEC9D11231AA4E2004C3D93 /* Extensions */,
 				E049D63D231A6FAF00C9B5C3 /* View */,
 				E049D640231A6FED00C9B5C3 /* Model */,
 				E049D641231A700700C9B5C3 /* IB */,
@@ -71,6 +84,7 @@
 			children = (
 				E049D629231A69D800C9B5C3 /* ViewController.swift */,
 				E049D63B231A6F8000C9B5C3 /* DetailViewController.swift */,
+				9A399233231AADD200E8E2ED /* MainViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -176,7 +190,9 @@
 				E049D63C231A6F8000C9B5C3 /* DetailViewController.swift in Sources */,
 				E049D62A231A69D800C9B5C3 /* ViewController.swift in Sources */,
 				E049D628231A69D800C9B5C3 /* AppDelegate.swift in Sources */,
+				9A399234231AADD200E8E2ED /* MainViewCell.swift in Sources */,
 				E049D63F231A6FE800C9B5C3 /* Cocktail.swift in Sources */,
+				9A0D13E5231AA58B00767537 /* UIView + makeGradient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
