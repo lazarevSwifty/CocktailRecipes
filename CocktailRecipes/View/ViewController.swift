@@ -11,16 +11,14 @@ import UIKit
 class ViewController: UIViewController {
     
     // MARK: - Properties
-    var jsonURL = "https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a"
+    var jsonURL = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic"
     var cocktails: [Cocktail] = []
+    var selectedItemCocktailID = ""
     
     // MARK: - IB Outlets
     @IBOutlet var collectionView: UICollectionView!
     
-    
     // MARK: - Lifecycle
-   
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,7 +32,7 @@ class ViewController: UIViewController {
         collectionView.backgroundView?.makeGradient()
         
     }
-
+    
 }
 
 

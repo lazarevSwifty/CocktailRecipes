@@ -12,6 +12,7 @@ extension ViewController:
     UICollectionViewDataSource,
     UICollectionViewDelegateFlowLayout {
     
+    // MARK: - UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
         return cocktails.count
@@ -28,10 +29,15 @@ extension ViewController:
         return cell
     }
     
+    // MARK: - UICollectionViewDelegateFlowLayout
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.bounds.width,
                       height: (collectionView.bounds.height - 40) / 4)
     }
+    
 }
+
+
+
