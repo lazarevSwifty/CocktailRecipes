@@ -12,6 +12,8 @@
 		E049D62D231A69D800C9B5C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E049D62B231A69D800C9B5C3 /* Main.storyboard */; };
 		E049D62F231A69DB00C9B5C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E049D62E231A69DB00C9B5C3 /* Assets.xcassets */; };
 		E049D632231A69DB00C9B5C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E049D630231A69DB00C9B5C3 /* LaunchScreen.storyboard */; };
+		E049D63C231A6F8000C9B5C3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E049D63B231A6F8000C9B5C3 /* DetailViewController.swift */; };
+		E049D63F231A6FE800C9B5C3 /* Cocktail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E049D63E231A6FE800C9B5C3 /* Cocktail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		E049D62E231A69DB00C9B5C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E049D631231A69DB00C9B5C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E049D633231A69DB00C9B5C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E049D63B231A6F8000C9B5C3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E049D63E231A6FE800C9B5C3 /* Cocktail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cocktail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,48 @@
 		E049D626231A69D800C9B5C3 /* CocktailRecipes */ = {
 			isa = PBXGroup;
 			children = (
-				E049D627231A69D800C9B5C3 /* AppDelegate.swift */,
-				E049D629231A69D800C9B5C3 /* ViewController.swift */,
-				E049D62B231A69D800C9B5C3 /* Main.storyboard */,
-				E049D62E231A69DB00C9B5C3 /* Assets.xcassets */,
-				E049D630231A69DB00C9B5C3 /* LaunchScreen.storyboard */,
-				E049D633231A69DB00C9B5C3 /* Info.plist */,
+				E049D63D231A6FAF00C9B5C3 /* View */,
+				E049D640231A6FED00C9B5C3 /* Model */,
+				E049D641231A700700C9B5C3 /* IB */,
+				E049D642231A702600C9B5C3 /* Support Files */,
 			);
 			path = CocktailRecipes;
+			sourceTree = "<group>";
+		};
+		E049D63D231A6FAF00C9B5C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E049D629231A69D800C9B5C3 /* ViewController.swift */,
+				E049D63B231A6F8000C9B5C3 /* DetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E049D640231A6FED00C9B5C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E049D63E231A6FE800C9B5C3 /* Cocktail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E049D641231A700700C9B5C3 /* IB */ = {
+			isa = PBXGroup;
+			children = (
+				E049D62B231A69D800C9B5C3 /* Main.storyboard */,
+				E049D630231A69DB00C9B5C3 /* LaunchScreen.storyboard */,
+			);
+			path = IB;
+			sourceTree = "<group>";
+		};
+		E049D642231A702600C9B5C3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E049D627231A69D800C9B5C3 /* AppDelegate.swift */,
+				E049D62E231A69DB00C9B5C3 /* Assets.xcassets */,
+				E049D633231A69DB00C9B5C3 /* Info.plist */,
+			);
+			path = "Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E049D63C231A6F8000C9B5C3 /* DetailViewController.swift in Sources */,
 				E049D62A231A69D800C9B5C3 /* ViewController.swift in Sources */,
 				E049D628231A69D800C9B5C3 /* AppDelegate.swift in Sources */,
+				E049D63F231A6FE800C9B5C3 /* Cocktail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +323,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CocktailRecipes/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CocktailRecipes/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +340,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CocktailRecipes/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CocktailRecipes/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
