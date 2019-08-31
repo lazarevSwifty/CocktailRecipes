@@ -24,22 +24,48 @@
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SsV-Ny-kyz">
                                 <rect key="frame" x="0.0" y="56" width="375" height="547"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RQc-Vx-Wau">
-                                    <size key="itemSize" width="375" height="100"/>
+                                    <size key="itemSize" width="375" height="150"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="mainCell" id="nCA-AD-Q95" customClass="MainViewCell" customModule="CocktailRecipes" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JLX-o9-UIa">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="JLX-o9-UIa" secondAttribute="height" multiplier="1:1" id="xPx-gZ-wbC"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLT-Vf-OMs">
+                                                    <rect key="frame" x="170" y="55.5" width="185" height="39.5"/>
+                                                    <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="33"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" red="0.27906033400000002" green="0.16479429600000001" blue="0.39216303829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <size key="shadowOffset" width="1" height="1"/>
+                                                </label>
+                                            </subviews>
                                         </view>
+                                        <color key="backgroundColor" red="0.27906033400000002" green="0.16479429600000001" blue="0.39216303829999999" alpha="0.19964683219178078" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="LLT-Vf-OMs" firstAttribute="centerY" secondItem="nCA-AD-Q95" secondAttribute="centerY" id="1In-xf-1g3"/>
+                                            <constraint firstAttribute="trailing" secondItem="LLT-Vf-OMs" secondAttribute="trailing" constant="20" id="245-zl-yj5"/>
+                                            <constraint firstItem="JLX-o9-UIa" firstAttribute="leading" secondItem="nCA-AD-Q95" secondAttribute="leading" id="4lF-T6-r9s"/>
+                                            <constraint firstItem="JLX-o9-UIa" firstAttribute="top" secondItem="nCA-AD-Q95" secondAttribute="top" id="O24-hR-jzj"/>
+                                            <constraint firstItem="LLT-Vf-OMs" firstAttribute="leading" secondItem="JLX-o9-UIa" secondAttribute="trailing" constant="20" id="g5p-y0-8Oc"/>
+                                            <constraint firstAttribute="bottom" secondItem="JLX-o9-UIa" secondAttribute="bottom" id="n2p-eN-D9i"/>
+                                        </constraints>
                                         <connections>
+                                            <outlet property="cocktailImage" destination="JLX-o9-UIa" id="Mnh-Qn-kX1"/>
+                                            <outlet property="cocktailName" destination="LLT-Vf-OMs" id="gYW-bK-EsA"/>
                                             <segue destination="W3G-q9-T5Z" kind="show" id="QU8-Jd-nVi"/>
                                         </connections>
                                     </collectionViewCell>
@@ -94,7 +120,7 @@
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.27906033396720886" green="0.16479429602622986" blue="0.39216303825378418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="25"/>
+                            <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="33"/>
                             <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                     </navigationBar>
