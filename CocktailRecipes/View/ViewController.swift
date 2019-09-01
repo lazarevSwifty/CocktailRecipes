@@ -33,9 +33,12 @@ class ViewController: UIViewController {
         }
         collectionView.dataSource = self
         collectionView.delegate = self
+    
+    }
+    
+    override func viewDidLayoutSubviews() {
         collectionView.backgroundView = UIView()
         collectionView.backgroundView?.makeGradient()
-        
     }
     
 }
