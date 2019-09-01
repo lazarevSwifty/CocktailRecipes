@@ -14,7 +14,6 @@ class ImageView: UIImageView {
         guard let url = url else { return }
         guard let imageURL = url.getURL() else { return }
         
-        // Если изображение есть в кэше, то используем его
         if let cachedImage = getCachedImage(url: imageURL) {
             image = cachedImage
             return
@@ -32,7 +31,6 @@ class ImageView: UIImageView {
                 self.image = UIImage(data: data)
             }
             
-            // Сохраняем изображение в кэш
             self.saveImageToCache(data: data, response: response)
             
             }.resume()
