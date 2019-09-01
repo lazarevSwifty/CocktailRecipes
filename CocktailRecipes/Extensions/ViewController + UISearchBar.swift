@@ -24,6 +24,7 @@ extension ViewController: UISearchBarDelegate {
                 self.cocktails = drinks.cocktails ?? []
                 self.collectionView.reloadData()
             }
+            searchBar.resignFirstResponder()
         }
     }
     
