@@ -45,8 +45,8 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLT-Vf-OMs">
-                                                    <rect key="frame" x="157" y="61" width="211" height="28"/>
-                                                    <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="23"/>
+                                                    <rect key="frame" x="157" y="62.5" width="211" height="25.5"/>
+                                                    <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="21"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                     <color key="shadowColor" red="0.27906033400000002" green="0.16479429600000001" blue="0.39216303829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -103,23 +103,107 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOn-1v-nS9">
-                                <rect key="frame" x="20" y="291.5" width="335" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Txt-k6-4JK">
+                                <rect key="frame" x="10" y="298.5" width="355" height="83.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="fOe-tY-BR0">
+                                        <rect key="frame" x="0.0" y="0.0" width="167.5" height="83.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="te5-UK-Du8">
+                                                <rect key="frame" x="0.0" y="0.0" width="167.5" height="24.5"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="0.27906033400000002" green="0.16479429600000001" blue="0.39216303829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <size key="shadowOffset" width="1" height="1"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MjY-Lw-NJm">
+                                                <rect key="frame" x="0.0" y="29.5" width="167.5" height="24.5"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="0.27906033400000002" green="0.16479429600000001" blue="0.39216303829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <size key="shadowOffset" width="1" height="1"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNb-Ap-GuE">
+                                                <rect key="frame" x="0.0" y="59" width="167.5" height="24.5"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="0.27906033400000002" green="0.16479429600000001" blue="0.39216303829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <size key="shadowOffset" width="1" height="1"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QzH-gN-G7P">
+                                        <rect key="frame" x="187.5" y="0.0" width="167.5" height="83.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51W-FH-jto">
+                                                <rect key="frame" x="0.0" y="0.0" width="167.5" height="24.5"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="0.27906033400000002" green="0.16479429600000001" blue="0.39216303829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <size key="shadowOffset" width="1" height="1"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0HN-aM-Mh1">
+                                                <rect key="frame" x="0.0" y="29.5" width="167.5" height="24.5"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="0.27906033400000002" green="0.16479429600000001" blue="0.39216303829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <size key="shadowOffset" width="1" height="1"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Se4-e5-Doc">
+                                                <rect key="frame" x="0.0" y="59" width="167.5" height="24.5"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="0.27906033400000002" green="0.16479429600000001" blue="0.39216303829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <size key="shadowOffset" width="1" height="1"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svV-bb-NZv">
+                                <rect key="frame" x="10" y="260" width="355" height="18.5"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.27906033400000002" green="0.16479429600000001" blue="0.39216303829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PBu-tf-wnS" customClass="ImageView" customModule="CocktailRecipes" customModuleProvider="target">
+                                <rect key="frame" x="70" y="15" width="235" height="235"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="PBu-tf-wnS" secondAttribute="height" multiplier="1:1" id="z5k-zw-4sM"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="TOn-1v-nS9" firstAttribute="centerY" secondItem="KCw-io-WMX" secondAttribute="centerY" id="ROw-ES-UkE"/>
-                            <constraint firstItem="TOn-1v-nS9" firstAttribute="leading" secondItem="whN-C6-isf" secondAttribute="leading" constant="20" id="lKI-Ka-Cjm"/>
-                            <constraint firstItem="whN-C6-isf" firstAttribute="trailing" secondItem="TOn-1v-nS9" secondAttribute="trailing" constant="20" id="r2T-BR-Smu"/>
+                            <constraint firstItem="Txt-k6-4JK" firstAttribute="top" secondItem="svV-bb-NZv" secondAttribute="bottom" constant="20" id="1Nc-Fv-pVY"/>
+                            <constraint firstItem="PBu-tf-wnS" firstAttribute="leading" secondItem="whN-C6-isf" secondAttribute="leading" constant="70" id="6qz-Z3-BVu"/>
+                            <constraint firstItem="svV-bb-NZv" firstAttribute="leading" secondItem="whN-C6-isf" secondAttribute="leading" constant="10" id="90X-BN-x5h"/>
+                            <constraint firstItem="Txt-k6-4JK" firstAttribute="leading" secondItem="whN-C6-isf" secondAttribute="leading" constant="10" id="Au5-R3-WPo"/>
+                            <constraint firstItem="svV-bb-NZv" firstAttribute="top" secondItem="PBu-tf-wnS" secondAttribute="bottom" constant="10" id="BMx-3P-d6x"/>
+                            <constraint firstItem="whN-C6-isf" firstAttribute="trailing" secondItem="svV-bb-NZv" secondAttribute="trailing" constant="10" id="H6h-0m-g2L"/>
+                            <constraint firstItem="whN-C6-isf" firstAttribute="trailing" secondItem="PBu-tf-wnS" secondAttribute="trailing" constant="70" id="OuH-PW-861"/>
+                            <constraint firstItem="whN-C6-isf" firstAttribute="trailing" secondItem="Txt-k6-4JK" secondAttribute="trailing" constant="10" id="aYa-wV-GsS"/>
+                            <constraint firstItem="PBu-tf-wnS" firstAttribute="top" secondItem="whN-C6-isf" secondAttribute="top" constant="15" id="gaX-Ln-TIq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="whN-C6-isf"/>
                     </view>
                     <connections>
-                        <outlet property="testLabel" destination="TOn-1v-nS9" id="L03-gw-BIg"/>
+                        <outlet property="coctailImage" destination="PBu-tf-wnS" id="yda-2x-M7q"/>
+                        <outlet property="ingredientFiveLabel" destination="jNb-Ap-GuE" id="9wV-Qw-X0r"/>
+                        <outlet property="ingredientFourLabel" destination="0HN-aM-Mh1" id="3QQ-s7-TZ3"/>
+                        <outlet property="ingredientOneLabel" destination="te5-UK-Du8" id="miJ-t8-u5p"/>
+                        <outlet property="ingredientThreeLabel" destination="MjY-Lw-NJm" id="qQv-8C-Hg0"/>
+                        <outlet property="ingredientTwoLabel" destination="51W-FH-jto" id="uI6-yi-RAD"/>
+                        <outlet property="ingredietSixLabel" destination="Se4-e5-Doc" id="R39-9v-pYb"/>
+                        <outlet property="instructionsLabel" destination="svV-bb-NZv" id="Qby-xR-MT3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dV2-Sv-uBg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -137,7 +221,7 @@
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.27906033396720886" green="0.16479429602622986" blue="0.39216303825378418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="33"/>
+                            <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="25"/>
                             <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                     </navigationBar>
