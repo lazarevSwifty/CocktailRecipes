@@ -12,8 +12,8 @@ extension ViewController: UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.becomeFirstResponder()
-        if let cocktail = searchBar.text {
-            let fullURL = searchURL + cocktail
+        if searchBar.text != "" {
+            let fullURL = searchURL + searchBar.text!
             NetworkManager.fetchData(urlString: fullURL) { drinks in
                 self.cocktails = drinks.cocktails ?? []
                 self.collectionView.reloadData()
@@ -25,6 +25,11 @@ extension ViewController: UISearchBarDelegate {
                 self.collectionView.reloadData()
             }
         }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+        
     }
     
 }
