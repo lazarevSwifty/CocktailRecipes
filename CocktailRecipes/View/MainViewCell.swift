@@ -10,22 +10,14 @@ import UIKit
 
 class MainViewCell: UICollectionViewCell {
     
-    @IBOutlet var cocktailImage: UIImageView!
+    @IBOutlet var cocktailImage: ImageView!
     @IBOutlet var cocktailName: UILabel!
     
-    func configure(with coctail: Cocktail) {
+    func configure(with cocktail: Cocktail) {
         
-        cocktailName.text = coctail.name
+        cocktailName.text = cocktail.name
         
-        DispatchQueue.global().async {
-            guard let stringURL = coctail.imageURL else { return }
-            guard let imageURL = URL(string: stringURL) else { return }
-            guard let imageData = try? Data(contentsOf: imageURL) else { return }
-            
-            DispatchQueue.main.async {
-                self.cocktailImage.image = UIImage(data: imageData)
-            }
-        }
+        cocktailImage.fetchImage(with: cocktail.imageURL)
     }
     
 }

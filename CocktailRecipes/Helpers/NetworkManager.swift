@@ -10,9 +10,9 @@ import UIKit
 
 class NetworkManager {
     
-    static func fetchData(str: String, completion: @escaping (Drinks) -> ()) {
+    static func fetchData(urlString: String, completion: @escaping (Drinks) -> ()) {
         
-        guard let url = URL(string: str) else { return }
+        guard let url = URL(string: urlString) else { return }
         URLSession.shared.dataTask(with: url){ (data, response, error) in
             
             guard let data = data else { return }

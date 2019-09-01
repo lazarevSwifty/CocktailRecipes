@@ -27,8 +27,7 @@ class ViewController: UIViewController {
         searchBar.delegate = self
         navigationController?.navigationBar.barStyle = .black
         
-        //fetchData(name: jsonURL)
-        NetworkManager.fetchData(str: jsonURL) { drinks in
+        NetworkManager.fetchData(urlString: jsonURL) { drinks in
             self.cocktails = drinks.cocktails ?? []
             self.collectionView.reloadData()
         }

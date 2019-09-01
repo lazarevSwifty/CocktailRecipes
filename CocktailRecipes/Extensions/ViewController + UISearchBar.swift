@@ -9,17 +9,18 @@
 import UIKit
 
 extension ViewController: UISearchBarDelegate {
+    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.becomeFirstResponder()
         if let cocktail = searchBar.text {
             let fullURL = searchURL + cocktail
-            NetworkManager.fetchData(str: fullURL) { drinks in
+            NetworkManager.fetchData(urlString: fullURL) { drinks in
                 self.cocktails = drinks.cocktails ?? []
                 self.collectionView.reloadData()
             }
             searchBar.resignFirstResponder()
         } else {
-            NetworkManager.fetchData(str: jsonURL) { drinks in
+            NetworkManager.fetchData(urlString: jsonURL) { drinks in
                 self.cocktails = drinks.cocktails ?? []
                 self.collectionView.reloadData()
             }
