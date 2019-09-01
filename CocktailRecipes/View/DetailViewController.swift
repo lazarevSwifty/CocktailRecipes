@@ -35,8 +35,13 @@ class DetailViewController: UIViewController {
     }
     
     func configureView() {
+        
         title = cocktail?.name
+        
         coctailImage.fetchImage(with: cocktail?.imageURL)
+        coctailImage.layer.cornerRadius = 10
+        coctailImage.layer.masksToBounds = true
+        
         instructionsLabel.text = cocktail?.instructions
         ingredientOneLabel.text = "\(cocktail?.ingredientOne ?? "") \(cocktail?.measureOne ?? "")"
         ingredientTwoLabel.text = "\(cocktail?.ingredientTwo ?? "") \(cocktail?.measureTwo ?? "")"
