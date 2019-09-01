@@ -21,6 +21,7 @@
 		E049D644231BAEF900C9B5C3 /* ViewController + UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E049D643231BAEF900C9B5C3 /* ViewController + UISearchBar.swift */; };
 		E049D648231BCA4100C9B5C3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E049D647231BCA4100C9B5C3 /* NetworkManager.swift */; };
 		E049D64B231BE70600C9B5C3 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E049D64A231BE70600C9B5C3 /* ImageView.swift */; };
+		E049D64D231C00FA00C9B5C3 /* VC + UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E049D64C231C00FA00C9B5C3 /* VC + UIAlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		E049D643231BAEF900C9B5C3 /* ViewController + UISearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ViewController + UISearchBar.swift"; path = "CocktailRecipes/Extensions/ViewController + UISearchBar.swift"; sourceTree = SOURCE_ROOT; };
 		E049D647231BCA4100C9B5C3 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E049D64A231BE70600C9B5C3 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageView.swift; path = CocktailRecipes/Helpers/ImageView.swift; sourceTree = SOURCE_ROOT; };
+		E049D64C231C00FA00C9B5C3 /* VC + UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC + UIAlertController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				9A6C68D2231AD2FD009CCBC7 /* ViewController + CollectionView.swift */,
 				9A76B79D231AF4E400A868FA /* View Controller Navigation.swift */,
 				E049D643231BAEF900C9B5C3 /* ViewController + UISearchBar.swift */,
+				E049D64C231C00FA00C9B5C3 /* VC + UIAlertController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				E049D644231BAEF900C9B5C3 /* ViewController + UISearchBar.swift in Sources */,
 				E049D648231BCA4100C9B5C3 /* NetworkManager.swift in Sources */,
 				E049D64B231BE70600C9B5C3 /* ImageView.swift in Sources */,
+				E049D64D231C00FA00C9B5C3 /* VC + UIAlertController.swift in Sources */,
 				9A76B79E231AF4E400A868FA /* View Controller Navigation.swift in Sources */,
 				E049D62A231A69D800C9B5C3 /* ViewController.swift in Sources */,
 				E049D628231A69D800C9B5C3 /* AppDelegate.swift in Sources */,

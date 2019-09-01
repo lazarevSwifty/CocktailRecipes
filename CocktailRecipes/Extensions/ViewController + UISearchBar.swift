@@ -17,12 +17,18 @@ extension ViewController: UISearchBarDelegate {
             NetworkManager.fetchData(urlString: fullURL) { drinks in
                 self.cocktails = drinks.cocktails ?? []
                 self.collectionView.reloadData()
+                if self.cocktails.count == 0 {
+                    self.showAlert(title: "Error", message: "Enter correct the name of cocktail")
+                    self.searchBar.becomeFirstResponder()
+                    
+                }
             }
             searchBar.resignFirstResponder()
         } else {
             NetworkManager.fetchData(urlString: jsonURL) { drinks in
                 self.cocktails = drinks.cocktails ?? []
                 self.collectionView.reloadData()
+                
             }
             searchBar.resignFirstResponder()
         }
