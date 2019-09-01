@@ -87,6 +87,7 @@
                     <navigationItem key="navigationItem" title="Coctails" id="t2O-3g-FAr"/>
                     <connections>
                         <outlet property="collectionView" destination="SsV-Ny-kyz" id="Aew-Jh-sHQ"/>
+                        <outlet property="searchBar" destination="JbF-Yk-Ixe" id="FTA-W0-UVM"/>
                         <segue destination="W3G-q9-T5Z" kind="show" identifier="toDelailVC" id="dre-jq-LrD"/>
                     </connections>
                 </viewController>
